@@ -1,2 +1,5 @@
-/build
+*~
+*.bak
 
+/build
+/self-certificate-generator
