@@ -219,7 +219,7 @@ func main() {
 		os.Exit(0)
 	}
 
-	if len(*serverDomainsStr) == 0 {
+	if !*genCAOnly && len(*serverDomainsStr) == 0 {
 		fmt.Fprintf(os.Stderr, "You must pass server domain(s) via --server-domains argument.\n")
 		os.Exit(1)
 	}
